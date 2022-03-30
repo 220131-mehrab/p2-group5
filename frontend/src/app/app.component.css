@@ -5,6 +5,8 @@ right: 0;
 left: 0;
 top: 0;
 }
-h1{
-color: #FFFF33;
+div{
+ font-size: 800%;
+  color: #FFFF33;
 }
+.button1{font-size: 30%}
