@@ -1,19 +1,19 @@
 
 fetch('/movies').then(resp => resp.json()).then(movies => {
-    document.querySelector('#planet').innerHTML = listPlanets(planets);
+    document.querySelector('#the_movie').innerHTML = listMovies(movies);
 });
 
-let listPlanet = function(planet){
-    return '<p>' + planet.planetID + ": " + planet.name + ": " + planet.mass + ": " + planet.moon + ": " + planet.distance + '</p>';
+let listMovie = function(the_movie){
+    return '<p>' + the_movie.movie_id + ": " + the_movie.movie_title + ": " + the_movie.movie_time + ": " + the_movie.movie_ratings + ": " + the_movie.movie_year + '</p>';
 };
 
-function listPlanets(json){
+function listMovies(json){
     //return `${json.map(listPlanet).join('\n')}`
-    return `${json.map(listPlanet).join('\n')}`
+    return `${json.map(listMovie).join('\n')}`
 };
 
 function postMovies(){
-    let planet = {
+    let the_movie = {
         "movie_id": document.getElementById("movie_id").value,
         "movie_title": document.getElementById("movie_title").value,
         "movie_time": document.getElementById("movie_time").value,
@@ -27,15 +27,15 @@ function postMovies(){
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(planet)
+        body: JSON.stringify(the_movie)
     }).then((result) => {
         if(result.status != 200){
             throw new Error("Bad Server Response")
         }
         console.log(result.text());
     }).catch((error) => {console.log(error);})
-    fetch('/allplanets').then(resp => resp.json()).then(planets => {
-        document.querySelector('#planet').innerHTML = listPlanets(planets);
+    fetch('/movies').then(resp => resp.json()).then(movies => {
+        document.querySelector('#the_movie').innerHTML = listMovies(movies);
     });
     window.document.location.reload();
 };
