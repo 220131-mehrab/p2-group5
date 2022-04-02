@@ -69,7 +69,7 @@ public class Movie {
         this.movie_year = movie_year;
     }
 
-    @Override
-    public String toString() {
-        return "movies [movie_title=" + movie_title + ", movie_id=" + movie_id + "movie_time" + movie_time + "movie_ratings" + movie_ratings + "movie_year" + movie_year + "]";
+//    @Override
+//    public String toString() {
+//        return "movies [movie_title=" + movie_title + ", movie_id=" + movie_id + "movie_time" + movie_time + "movie_ratings" + movie_ratings + "movie_year" + movie_year + "]";
 }
