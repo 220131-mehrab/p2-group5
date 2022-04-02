@@ -1,12 +1,21 @@
-body{
-position: fixed;
-bottom: 0;
-right: 0;
-left: 0;
-top: 0;
-}
-div{
+
+/*div{
  font-size: 800%;
   color: #FFFF33;
-}
-.button1{font-size: 30%}
+  left: -800%;
+}*/
+
+
+/*.container{
+
+ font-size: 800%;
+  color: #FFFF33;
+  left: -800%;
+height: 1000px;
+text-align: center;
+vertical-align: middle;
+border-style: solid;
+border-width: 2px;
+}*/
+
+
