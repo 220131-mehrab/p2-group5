@@ -1,7 +1,6 @@
 package com.revature.Nextflix;
 
 import javax.persistence.*;
-import java.sql.*
 
 @Entity
 @Table(name = "movies")
@@ -22,7 +21,7 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(int movie_id, String movie_title) {
+    public Movie(int movie_id, String movie_title){
         this.movie_id = movie_id;
         this.movie_title = movie_title;
         this.movie_time = movie_time;
@@ -70,7 +69,7 @@ public class Movie {
         this.movie_year = movie_year;
     }
 
-    public static void main(String[] args) {
-
-    }
+    @Override
+    public String toString() {
+        return "movies [movie_title=" + movie_title + ", movie_id=" + movie_id + "movie_time" + movie_time + "movie_ratings" + movie_ratings + "movie_year" + movie_year + "]";
 }
