@@ -6,6 +6,8 @@ CREATE TABLE "movies" (
   "movie_year" INT NOT NULL
 );
 
+CREATE INDEX "ifk_movie_id" ON "movies" ("movie_id");
+
 INSERT INTO "movies" VALUES (1, 'Iron Man', 126, 'PG-13', 2008);
 INSERT INTO "movies" VALUES (2, 'Captain America: The First Avenger', 124, 'PG-13', 2011);
 INSERT INTO "movies" VALUES (3, 'Guardians of the Galaxy', 122, 'PG-13', 2014);
