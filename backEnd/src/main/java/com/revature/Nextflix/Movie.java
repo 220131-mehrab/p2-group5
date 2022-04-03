@@ -21,13 +21,14 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(int movie_id, String movie_title){
+    public Movie(int movie_id, String movie_title, int movie_time, String movie_ratings, int movie_year) {
         this.movie_id = movie_id;
         this.movie_title = movie_title;
         this.movie_time = movie_time;
         this.movie_ratings = movie_ratings;
         this.movie_year = movie_year;
     }
+
 
     public int getmovie_id() {
         return movie_id;
