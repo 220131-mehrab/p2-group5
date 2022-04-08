@@ -7,7 +7,7 @@
 - Push the insert button and text box's off to left of the page
 - Made the login button point to the end insert portion of the page
 
-##TO DO's
+## TO DO's
 - Link up database to browser container
 - Enable functionality to insert movie button
 - Make sure data persists when adding a movie
